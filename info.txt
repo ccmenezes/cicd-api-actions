@@ -1,0 +1,9 @@
+## Descrição do projeto
+Este projeto é parte integrante do curso da Alura.
+
+## Curso
+integracao-continua-pipelines-testes-automatizados-github-actions
+
+## Data de início 
+19/11/2024
+
