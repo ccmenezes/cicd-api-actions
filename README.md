@@ -57,17 +57,17 @@ The command make is responsible for running an existing stage at Makefile in thi
 These commands have the start, lint, and test stages.
 Make is built Linux, then it's not necessary to any additional steps to install it.
 
-### CI Execution
+## CI Execution
 
 1. Automatic Triggers:
  - On push to main.
  - On pull request to main.
 
-### Future Enhancements
+## Future Enhancements
 
 1. Using secrets for sensitive data as password
 2. Create a test coverage report
 
 
-### Contribuitions
+## Contribuitions
 If you want to contribute to the project, from a developer, devOps or QA perspective, it will be a pleasure to accept your contribution.
