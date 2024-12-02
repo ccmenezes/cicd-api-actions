@@ -8,9 +8,9 @@ This project was created to explore the build process using Github Actions, focu
 * Go (version 1.17 or newer recommended)
 * Docker
 
-### Steps to run locally
+## Steps to run locally
 
-#### Using Docker
+### Using Docker
 
 Using docker compose with simple commands you can start, check the logs, and shut down the application.
 
@@ -43,7 +43,7 @@ docker compose down
 docker compose ls
 ```
 
-#### Using Make
+### Using Make
 
 Only for unix-based users.
 
