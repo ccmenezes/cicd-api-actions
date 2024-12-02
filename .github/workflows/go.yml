@@ -22,13 +22,11 @@ jobs:
         run: docker compose up -d postgres
       
       - name: Lint
-        ## Remove run when I uncomment the correction for the pipeline
-        run: docker run --rm -itv $(CURDIR):/app -w /app golangci-lint golangci-lint run controllers/ database/ models/ routes/
-        # uses: golangci/golangci-lint-actions@v6
-        # with:
-        #   version: "v1.59"
-        ## Inform which foldes I wanna run the lint
-        #   args: controllers/ database/ models/ routes/
+        uses: golangci/golangci-lint-action@v6
+        with:
+          version: "v1.59"
+        # Inform which foldes I wanna run the lint
+          args: controllers/ database/ models/ routes/
         # Aula 03 - Executando na esteira
 
       # - name: Test
