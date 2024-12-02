@@ -32,3 +32,12 @@ jobs:
       - name: Test
         run: |
           DB_HOST=${{ vars.DB_HOST }} DB_PASSWORD=${{ secrets.DB_PASSWORD }} DB_USER=${{ vars.DB_USER }} DB_NAME=${{ vars.DB_NAME }} DB_PORT=${{ vars.DB_PORT }} go test -v main_test.go
+
+      - name: Build
+        run: go build main.go
+      
+      - name: Upload project
+        uses: actions/upload-artifact@v4
+        with:
+          name: executable_project
+          path: main
