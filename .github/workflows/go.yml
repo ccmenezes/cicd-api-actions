@@ -39,5 +39,5 @@ jobs:
       - name: Upload project
         uses: actions/upload-artifact@v4
         with:
-          name: executable_project
+          name: compiled project
           path: main
